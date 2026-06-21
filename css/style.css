@@ -230,3 +230,19 @@ transform: translateY(0);
 
     line-height: 1.6;
 }
+
+.journal-date {
+    color: #38bdf8;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+}
+
+.journal-entry h4 {
+    margin-top: 24px;
+    margin-bottom: 10px;
+    color: #cbd5e1;
+}
+
+.journal-entry ul {
+    margin-bottom: 8px;
+}
