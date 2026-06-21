@@ -12,7 +12,9 @@ function updateClock() {
         String(now.getMinutes()).padStart(2, "0") + ":" +
         String(now.getSeconds()).padStart(2, "0");
 
+    if (clock) {
     clock.textContent = time;
+    }
 }
 
 setInterval(updateClock, 1000);
@@ -29,11 +31,14 @@ const messages = [
 const dailyMessage =
     document.getElementById("daily-message");
 
-const randomIndex =
-    Math.floor(Math.random() * messages.length);
+if (dailyMessage) {
 
-dailyMessage.textContent =
-    messages[randomIndex];
+    const randomIndex =
+        Math.floor(Math.random() * messages.length);
+
+    dailyMessage.textContent =
+        messages[randomIndex];
+}
 
 const fadeElements =
     document.querySelectorAll(".fade-in");
